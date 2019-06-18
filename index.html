@@ -1,22 +1,55 @@
-<html>
-<head>
-<title>Final Project</title>
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-<link rel="stylesheet" href="https://michalsnik.github.io/aos/dist/css/styles.css" />
-</head>
-<body>
-<h1>UFO - dataRockStars</h1>
-<p>Introduction: UFO sightings were a big talking topic in the nineties, but did you know that we're still being visited by extraterrestrial beings.</p>
-<p>We’ll use ML to predict where the next UFO sighting will take place, after analyzing past ufo sightings data. </p>
-<div class='tableauPlaceholder' id='viz1560530958143' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TY&#47;TYQJQX9CC&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;TYQJQX9CC' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TY&#47;TYQJQX9CC&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1560530958143');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<!DOCTYPE html>
+<html lang="en">
 
-<h2>Machine Learning Findings</h2>
-				<div class="code code--small code--left" data-aos="fade-up">
-					ML findings 1<br />
+<head>
+  <meta charset="UTF-8">
+  <title>UFO</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light white bb-green">
+    <a class="navbar-brand" href="/">dataRockStars</a>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lrg-12">
+        <div class="box">
+          <h1>UFO Sightings</h1>
+          <hr />
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-md">
+                <h3>Crime Statistics</h3>
+                <p>June and July were the highest reported crime months of 2018 (both at 9.2%).
+                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
+                  months.</p>
+                <p>No surprise here, 70% of crime was committed by males (29% female, 1% unknown).</p>
+                <p>Top 3 crimes in 2018 were: Aggravated assault, stealing and non-aggravated assault</p>
+                <p>Most frequent age range: 30-40</p>
+                <p>15% of all crime was committed with a firearm.</p>
+                
+                <div class='tableauPlaceholder' id='viz1560819626780' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;UF&#47;UFO_15605307961550&#47;UFO&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='UFO_15605307961550&#47;UFO' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;UF&#47;UFO_15605307961550&#47;UFO&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1560819626780');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <br />
+                <br />
+                <h3>Machine Learning</h3>
+                <p>June and July were the highest reported crime months of 2018 (both at 9.2%).
+                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
+                  months.</p>
+                <div class="code code--small code--left" data-aos="fade-up">
+					ML findings 1<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
+                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
+                  months.
                     <img src="resources/1.png" />
 				</div>
 				<div class="code code--small code--right" data-aos="fade-down">
-					ML linear regression model
+					ML linear regression model<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
+                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
+                  months.
                     <img src="resources/2.png" />
 				</div>
 				<div class="code code--small code--left" data-aos="fade-right">
@@ -40,8 +73,30 @@
 					<pre><code>&lt;div data-aos="fade-down-left">&lt;/div></code></pre>
 				</div>
 
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+  </div>
+  <footer id="footer">dataRockStars &copy; copyright
+    <script type="text/javascript">
+      document.write(new Date().getFullYear());
+    </script>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
@@ -55,7 +110,6 @@
 
 		<script>
 			hljs.initHighlightingOnLoad();
-
 			$('.hero__scroll').on('click', function(e) {
 				$('html, body').animate({
 					scrollTop: $(window).height()
