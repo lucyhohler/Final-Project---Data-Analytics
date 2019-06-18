@@ -45,7 +45,9 @@ a {
   background-color: #fff;
   border-radius: 15px;
 }
-.left-align {float: left;}
+.left-align {
+    float: left;
+    margin-right: 10px;}
 .right-align {float: right;}
 
 .active {
@@ -499,3 +501,48 @@ html {
           -ms-transform: scaleX(200);
               transform: scaleX(200);
       opacity: 1; }
+
+@keyframes particleAnimation
+{
+    from {
+        left: -100px;
+    }
+    to {
+        left: calc( 100% + 100px );
+    }
+}
+
+.b{
+  position:fixed;
+  left:0px;
+  top:50px;
+  width:3px;
+  height:1px;
+  background-color:white;
+  position:fixed;
+  animation-name:particleAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.b::before{
+  position:absolute;
+  display:block;
+  content:"";
+  width:100px;
+  right:1px;
+  top:0px;
+  height:1px;
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+}
+.b-1{
+  animation-duration:8s;
+  top: 30%;
+}
+.b-2{
+  animation-duration:5s;
+  top:60%;
+}
+.b-3{
+  animation-duration:10s;
+  top:90%;
+}
