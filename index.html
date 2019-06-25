@@ -23,37 +23,63 @@
     <div class="row">
       <div class="col-lrg-12">
         <div class="box">
-          <h1><img src="resources/ufo.png" height=100px width=100px />UFO Sightings</h1>
+          <center><h1><img src="resources/ufo.png" height=100px width=100px />UFO Sightings</h1></center>
           <hr />
           
           <div class="container">
             <div class="row">
               <div class="col-md">
+                <center><div class="div2">
+                  <h4>dataRockstars team</h4>
+                  <ul>
+                    <li>Lucy Hohler</li>
+                    <li>Rod Skoglund</li>
+                    <li>Giovanni Rigters</li>
+                  </ul>
+                </div></center>
+                <hr />
                 <h3>Meet ET in person</h3>
-                <p>June and July were the highest reported crime months of 2018 (both at 9.2%).
-                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
-                  months.</p>
-                <p>No surprise here, 70% of crime was committed by males (29% female, 1% unknown).</p>
-                <p>Top 3 crimes in 2018 were: Aggravated assault, stealing and non-aggravated assault</p>
-                <p>Most frequent age range: 30-40</p>
-                <p>15% of all crime was committed with a firearm.</p>
+                <p>UFO sightings and crop circles were a big topic of discussion in the early nineties. Even though this topic has mostly gone by the wayside, actual UFO sightings never slowed down.</p>
+                <p>For our hypothesis we are trying to predict the next UFO sighting.</p>
+                <p>To accomplish this we are using UFO sightings dataset of the last 88 years, focused on the US only (60k+ rows of data).</p>
+                <p>To analyze, visualize and find interesting trends, we used Tableau.</p>
+                <p>To predict our data we used various machine learning models.</p>
                 
                 <div class='tableauPlaceholder' id='viz1560873678674' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;UF&#47;UFO-Final&#47;DataAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='UFO-Final&#47;DataAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;UF&#47;UFO-Final&#47;DataAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1560873678674');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 <br />
                 <br />
                 <center><img src="resources/friendly.png" height=200px width=250px /></center>
-                <h3>Machine Learning</h3>
-                <p>June and July were the highest reported crime months of 2018 (both at 9.2%).
-                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
-                  months.</p>
-                <div class="code code--small code--left" data-aos="fade-up">
-					ML findings 1<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
+                <hr />
+                <center><h3>Machine Learning</h3></center>
+                <p>
+                The next step is to use Machine Learning to allow us to predict ufo sightings. The four models we used for ML:
+                <ul>
+                <li>Logistic Regression</li>
+                <li>KNN</li>
+                <li>Deep Learning</li>
+                <li>Neural Network</li>
+                </ul>
+                </p>
+                <div class="code code--small code--left" data-aos="fade-right">
+					Logistic Regression<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
                   Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
                   months.
                     <img src="resources/1.png" />
 				</div>
-				<div class="code code--small code--right" data-aos="fade-down">
-					ML linear regression model<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
+				<div class="code code--small code--right" data-aos="fade-left">
+					Deep Learning<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
+                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
+                  months.
+                    <img src="resources/2.png" />
+				</div>
+        <div class="code code--small code--left" data-aos="fade-right">
+					KNN<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
+                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
+                  months.
+                    <img src="resources/1.png" />
+				</div>
+				<div class="code code--small code--right" data-aos="fade-left">
+					Neural Network<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
                   Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
                   months.
                     <img src="resources/2.png" />
