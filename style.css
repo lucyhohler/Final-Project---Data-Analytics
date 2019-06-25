@@ -8,7 +8,16 @@ body {
   font-weight:bold;
   animation: myanimation 20s infinite;
 }
-
+.div2 {
+  width: 300px;
+  height: 150px;  
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+ul {
+  list-style-image: url('resources/bullet.png');
+}
 @keyframes myanimation {
   0% {background-color: #223E75;}
   25%{background-color: #6690A1;}
