@@ -39,11 +39,11 @@
                 </div></center>
                 <hr />
                 <h3>Meet ET in person</h3>
-                <p>UFO sightings and crop circles were a big topic of discussion in the early nineties. Even though this topic has mostly gone by the wayside, actual UFO sightings never slowed down.</p>
-                <p>For our hypothesis we are trying to predict the next UFO sighting.</p>
-                <p>To accomplish this we are using UFO sightings dataset of the last 88 years, focused on the US only (60k+ rows of data).</p>
+                <span style="font-weight:normal"><p>UFO sightings and crop circles were a big topic of discussion in the early nineties. Even though this topic has mostly gone by the wayside, <br />actual UFO sightings never slowed down.</p>
+                <p>Our <u>hypothesis</u> is to see if we can use a supervised machine learning prediction model to get to an accuracy score of at least 90% <br />using training and testing data.</p>
+                <p>To accomplish this we are using our UFO sightings dataset of the last 88 years, focused on the US only (60k+ rows of data).</p>
                 <p>To analyze, visualize and find interesting trends, we used Tableau.</p>
-                <p>To predict our data we used various machine learning models.</p>
+                <p>To predict our data we used various machine learning models.</p></span>
                 
                 <div class='tableauPlaceholder' id='viz1560873678674' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;UF&#47;UFO-Final&#47;DataAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='UFO-Final&#47;DataAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;UF&#47;UFO-Final&#47;DataAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1560873678674');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 <br />
@@ -53,13 +53,13 @@
                 <center><h3>Machine Learning</h3></center>
                 <center><img src="resources/ML.png" height=450px width=650px /></center>
                 <p><br />
-                The next step is to use Machine Learning to allow us to predict ufo sightings. <br />Because our data provided both our input and output variables we used supervised learning models:
+                <span style="font-weight:normal">The next step is to use Machine Learning to allow us to predict ufo sightings. <br />Because our data provided both our input and output variables we used supervised learning models:
                 <ul>
                 <li>Logistic Regression</li>
                 <li>KNN</li>
                 <li>Deep Learning</li>
                 <li>Neural Network</li>
-                </ul>
+                </ul></span>
                 </p>
                 <div class="code code--small code--left" data-aos="fade-right">
 					Logistic Regression<br /><img src="resources/lg.png" /><br /><span style="font-weight:normal">A predictive modelling algorithm that is used when the Y variable is binary categorical. 
@@ -81,39 +81,20 @@
                     <img src="resources/knn2.png" />
 				</div>
 				<div class="code code--small code--right" data-aos="fade-left">
-					Neural Network<br />June and July were the highest reported crime months of 2018 (both at 9.2%).
-                  Feb was the lowest at 6.9%, possibly because there are less days in Feb and it is one of the colder
-                  months.
-                    <img src="resources/2.png" />
+					Neural Network (our best prediction model - 89.35% accuracy)<br />
+          <img src="resources/NN.png" /><br />
+          <span style="font-weight:normal">A neural network is nothing more than a bunch of neurons connected together. 
+          A neuron, the basic unit of the network, takes inputs (data), does some math with them, and produces an output. You can also apply hidden layers to have the machine do some additional calculations.</span>
+                    <img src="resources/NNscore.png" /><br /><br /><br />
 				</div>
-				<div class="code code--small code--left" data-aos="fade-right">
-					<pre><code>&lt;div data-aos="fade-right">&lt;/div></code></pre>
-                    <img src="resources/1.png" />
-				</div>
-				<div class="code code--small code--right" data-aos="fade-left">
-					<pre><code>&lt;div data-aos="fade-left">&lt;/div></code></pre>
-                    <img src="resources/1.png" />
-				</div>
-				<div class="code code--small code--left" data-aos="fade-up-right">
-					<pre><code>&lt;div data-aos="fade-up-right">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="fade-up-left">
-					<pre><code>&lt;div data-aos="fade-up-left">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="fade-down-right">
-					<pre><code>&lt;div data-aos="fade-down-right">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="fade-down-left">
-					<pre><code>&lt;div data-aos="fade-down-left">&lt;/div></code></pre>
-				</div>
-        <div class="clear"></div>
-        <h3>Conclusion</h3>
+        <div class="code code--small code--left" data-aos="fade-right">
+					Conclusion<br />
+          <span style="font-weight:normal">If you want to see UFOs the most likely state will be California during the summer at night. Look up and you might see a bright light, circle, triangle or fireball.<br /><br />
+        This finding is also backed by our machine learning models which have shown us that the neural network had the best accuracy, getting us close to our hypothesis of getting a 90% accuracy score.
         <p><div class="left-align"><img src="resources/abduction.jpg" height=250px width=300px /></div>
-        Testing the conclusion for our project.</p>
-        
-                
-                
-                
+        Disclaimer: dataRockStars is not to be held responsible if you are abducted by aliens :)</p></span>
+				</div>
+        <div class="clear"></div>                     
               </div>
             </div>
           </div>
